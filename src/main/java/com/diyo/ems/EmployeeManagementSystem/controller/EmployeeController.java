@@ -20,4 +20,9 @@ public class EmployeeController {
     public List<Employee> getAllEmployees(){
         return  employeeRespository.findAll();
     }
+
+    @GetMapping("/getById")
+    public String getEmployeeById(){
+        return  "Hello world";
+    }
 }
