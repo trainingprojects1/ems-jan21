@@ -25,4 +25,13 @@ public class EmployeeController {
     public String getEmployeeById(){
         return  "Hello world";
     }
+
+    /**
+     * This method is added by Samon
+     * @return
+     */
+    @GetMapping("/getByIdUpdated")
+    public String getEmployeeByIdUpdated(){
+        return  "Hello world--UpdatedBySamon";
+    }
 }
