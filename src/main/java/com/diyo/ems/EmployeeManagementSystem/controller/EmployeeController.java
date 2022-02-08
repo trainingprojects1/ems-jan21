@@ -35,4 +35,9 @@ public class EmployeeController {
     public String getEmployeeByIdUpdated(){
         return  "Hello world--UpdatedBySamon";
     }
+
+    @GetMapping("/getIDByUpdatedUser")
+    public String getIDByUpdatedUser(){
+        return "New Dummy Method";
+    }
 }
