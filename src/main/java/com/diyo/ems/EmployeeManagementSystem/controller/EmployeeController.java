@@ -27,8 +27,7 @@ public class EmployeeController {
     }
 
     /**
-     * This method is added by Samon :
-     * This is commited and Pushed Using SourceTree
+
      * @return
      */
     @GetMapping("/getByIdUpdated")
