@@ -28,13 +28,25 @@ public class EmployeeController {
     public String getEmployeeById(){
         return  "Hello world";
     }
-    @PostMapping("/getId")
-    public String getEmployeeId(){
-        return  "Hello world";
+
+
+    /**
+
+     * @return
+     */
+    @GetMapping("/getByIdUpdated")
+    public String getEmployeeByIdUpdated(){
+        return  "Hello world--UpdatedBySamon";
     }
+
+    @GetMapping("/getIDByUpdatedUser")
+    public String getIDByUpdatedUser() {
+        return "New Dummy Method";
+    }
+
     @PutMapping("/DeleteId")
     public String deleteEmployeeId(){
         return  "Hello world new changes";
-        
+
     }
 }
