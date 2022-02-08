@@ -1,14 +1,16 @@
 package com.diyo.ems.EmployeeManagementSystem.controller;
 
-import com.diyo.ems.EmployeeManagementSystem.entity.Employee;
-import com.diyo.ems.EmployeeManagementSystem.repository.EmployeeRespository;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import com.diyo.ems.EmployeeManagementSystem.entity.Employee;
+import com.diyo.ems.EmployeeManagementSystem.repository.EmployeeRespository;
 
 @RestController
 @RequestMapping("/employee")
@@ -28,6 +30,10 @@ public class EmployeeController {
     }
     @PostMapping("/getId")
     public String getEmployeeId(){
+        return  "Hello world";
+    }
+    @PutMapping("/DeleteId")
+    public String deleteEmployeeId(){
         return  "Hello world";
     }
 }
