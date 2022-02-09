@@ -49,4 +49,8 @@ public class EmployeeController {
         return  "Hello world new changes";
 
     }
+    @GetMapping("/getByName")
+    public String getByName(){
+        return  "Hello this is from getByName method";
+}
 }
